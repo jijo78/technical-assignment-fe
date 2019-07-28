@@ -1,7 +1,91 @@
-body {
-	background-color: green;
+$color-dark-purple: rgb(60, 50, 64);
+$color-light-grey: rgb(219, 218, 219);
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $color-light-grey;
+	padding: 2rem;
+	font-family: Helvetica Neue Light, Helvetica Neue, Helvetica, sans-serif;
 	h1 {
-		color: white;
+		color: $color-dark-purple;
+		margin-bottom: 1rem;
+	}
+	.game {
+		position: relative;
+	}
+	.game__score {
+		color: $color-dark-purple;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		h2 {
+			font-size: 2rem;
+		}
+		p {
+			text-align: center;
+			padding: 0.5rem;
+			font-size: 1.5rem;
+		}
+	}
+
+	.game__intro {
+		color: $color-dark-purple;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		transition: opacity 0.5s ease;
+		button {
+			width: 150px;
+			height: 50px;
+			background: none;
+			border: none;
+			color: $color-light-grey;
+			font-size: 20px;
+			background-color: $color-dark-purple;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+	}
+
+	.game__match {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		transition: opacity 0.5s ease 0.5s;
+		button {
+			width: 150px;
+			height: 50px;
+			background: none;
+			border: none;
+			color: $color-light-grey;
+			font-size: 20px;
+			background-color: $color-dark-purple;
+			border-radius: 3px;
+			margin-right: 20px;
+			cursor: pointer;
+		}
+	}
+	.game__match-winner {
+		color: $color-dark-purple;
+		text-align: center;
+		font-size: 50px;
+		margin-bottom: 2rem;
+	}
+
+	.fadeOut {
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	.fadeIn {
+		opacity: 1;
+		pointer-events: all;
 	}
 }
