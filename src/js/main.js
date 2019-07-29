@@ -1,5 +1,7 @@
 require('../css/main.scss');
 
-import print from './module';
+import startGame from './startGame';
+import playMatch from './playMatch';
 
-print('it works well!');
+startGame();
+playMatch();

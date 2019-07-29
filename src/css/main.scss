@@ -8,18 +8,21 @@ $color-light-grey: rgb(219, 218, 219);
 }
 
 body {
-	background-color: $color-light-grey;
+	background-color: green;
 	padding: 2rem;
 	font-family: Helvetica Neue Light, Helvetica Neue, Helvetica, sans-serif;
+
 	h1 {
-		color: $color-dark-purple;
+		color: $color-light-grey;
 		margin-bottom: 1rem;
 	}
+
 	.game {
 		position: relative;
 	}
+
 	.game__score {
-		color: $color-dark-purple;
+		color: $color-light-grey;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
@@ -34,7 +37,7 @@ body {
 	}
 
 	.game__intro {
-		color: $color-dark-purple;
+		color: $color-light-grey;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -45,9 +48,9 @@ body {
 			height: 50px;
 			background: none;
 			border: none;
-			color: $color-light-grey;
+			color: $color-dark-purple;
 			font-size: 20px;
-			background-color: $color-dark-purple;
+			background-color: $color-light-grey;
 			border-radius: 3px;
 			cursor: pointer;
 		}
@@ -64,18 +67,26 @@ body {
 			height: 50px;
 			background: none;
 			border: none;
-			color: $color-light-grey;
+			color: $color-dark-purple;
 			font-size: 20px;
-			background-color: $color-dark-purple;
+			background-color: $color-light-grey;
 			border-radius: 3px;
 			margin-right: 20px;
 			cursor: pointer;
 		}
 	}
+
 	.game__match-winner {
-		color: $color-dark-purple;
+		color: $color-light-grey;
 		text-align: center;
-		font-size: 50px;
+		font-size: 25rem;
+		margin-bottom: 2rem;
+	}
+
+	.game__match-header {
+		color: $color-light-grey;
+		text-align: center;
+		font-size: 2.5rem;
 		margin-bottom: 2rem;
 	}
 
